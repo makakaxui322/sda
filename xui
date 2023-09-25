@@ -640,7 +640,7 @@ Bt.MouseButton1Click:Connect(function()
 		Bt.Text = "10T Bt"
 		_G.Bt = false
 	end
-	while _G.bt == true and task.wait() do
+	while _G.bt == true do task.wait()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-279, 281, 1000)
 		local args = {[1] = {[1] = "+FS1"}}
 		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
